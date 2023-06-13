@@ -1,0 +1,31 @@
+object fMain: TfMain
+  Left = 450
+  Height = 195
+  Top = 187
+  Width = 625
+  Caption = 'Редактирование сетки '#10'TStringGrid'
+  ClientHeight = 195
+  ClientWidth = 625
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object StringGrid1: TStringGrid
+    Left = 8
+    Height = 120
+    Top = 8
+    Width = 615
+    DefaultRowHeight = 18
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    TabOrder = 0
+    OnGetEditMask = StringGrid1GetEditMask
+  end
+  object Edit1: TEdit
+    Left = 144
+    Height = 28
+    Top = 142
+    Width = 100
+    OnClick = Edit1Click
+    TabOrder = 1
+    Text = 'Добавить'
+  end
+end

@@ -1,0 +1,45 @@
+object Form1: TForm1
+  Left = 833
+  Height = 133
+  Top = 255
+  Width = 416
+  Caption = 'Form1'
+  ClientHeight = 133
+  ClientWidth = 416
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    Left = 21
+    Height = 20
+    Top = 8
+    Width = 129
+    Caption = 'Заголовок формы:'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 21
+    Height = 28
+    Top = 40
+    Width = 235
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 272
+    Height = 31
+    Top = 40
+    Width = 94
+    Caption = 'Применить'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object CheckBox1: TCheckBox
+    Left = 24
+    Height = 24
+    Top = 80
+    Width = 96
+    Caption = 'CheckBox1'
+    TabOrder = 2
+  end
+end
